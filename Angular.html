@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Noun:</label><input type="text" ng-model="noun" placeholder="Enter a Noun here">
+      <label>Adjective:</label><input type="text" ng-model="adjective" placeholder="Enter Adjective here">
+      <label>Age:</label><input type="number" ng-model="age" placeholder="Enter your age here"/>
+      
+    
+
+      <h2> 
+      
+      
+      
+      
+     
+
+
+
+      <hr>
+      <h1>  Hello
+          <span ng-if="noun"> {{noun}}</span>
+          <span ng-if="!noun">___________</span> is a
+          <span ng-if="adjective"> {{adjective}} </span>
+          <span ng-if="!adjective">__________</span> Halloween pumpkin!
+          Do you think in 10 year when you are
+          <span ng-if="age">{{age + 10}}</span>
+          <span ng-if="!age">______________</span> years old is too old to trick or treat?
+          
+          <span ng-if="age"> It is {{ age >= 10 }} </span> 
+        </h1> 
+          
+          <!-- <span ng-if="!yourName">___________</span> Hello friends!
+        It is {{ teacher.toLowerCase() ==='yes'|| yourName.toLowerCase() ===='ivan'}}
+        </h1> -->
+
+
+
+         
+      <!-- <input type="number" ng-model="quantity" placeholder="Quantity" /> -->
+      <!-- <input type= "number" ng-model="age" placeholder="Age" /> -->
+
+       <!-- <h2>{{10 + Age }}</h2> -->
+
+
+
+
+        <!-- <h1> In 10 years you will be 
+            <span ng-if="number">{{age + 10}}</span>
+            <span ng-if="!number">____________</span>, 
+            do you think its time to find another way to enjoy the day?</h1> -->
+
+
+        
+    </div>
+  </body>
+</html>
